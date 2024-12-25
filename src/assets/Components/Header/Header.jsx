@@ -106,16 +106,7 @@ const Header = () => {
   );
 };
 
-let pages = document.getElementsByClassName("pages")
-let blogMenu = document.querySelector(".blogmenu");
-pages.addEventListener("mouseover",(e)=>{
-    e.preventDefault()
-    blogMenu.classList.toggle("active")
-})
 
-document.addEventListener("mouseover", (e) => {
-    if (!blogMenu.contains(e.target) && !pages.contains(e.target)) {
-        blogMenu.classList.remove("active");
-    }
-});
+    
+
 export default Header;
