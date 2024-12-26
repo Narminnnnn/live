@@ -8,7 +8,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { FaHeart } from "react-icons/fa";
+import { MdOutlineShoppingCart } from "react-icons/md";
 const Header = () => {
   return (
     <>
@@ -35,7 +36,7 @@ const Header = () => {
               <li>
                 <a href="">
                   <FaFacebook />
-                </a>{" "}
+                </a>
               </li>
               <li>
                 <a href="">
@@ -76,26 +77,37 @@ const Header = () => {
                 <li className="navbar">
                   <a href="">Projects</a>
                 </li>
-                <li className="pages navbar">
+                <li className="page ">
                   <a href="">
-                    Pages <IoIosArrowDown />
-                    <div className="blogmenu">
-                      <ul>
-                        <li className="menuBlog">
-                          <a href="">About us</a>
-                        </li>
-                        <li className="menuBlog">
-                          <a href="">Faqs</a>
-                        </li>
-                      </ul>
-                    </div>
+                    Pages
+                    <IoIosArrowDown />
                   </a>
+                  <div className="blogmenu">
+                    <ul>
+                      <li className="menuBlog">
+                        <a href="">About us</a>
+                      </li>
+                      <li className="menuBlog">
+                        <a href="">Faqs</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li className="navbar">
                   <a href="">Infos</a>
                 </li>
                 <li className="navbar">
                   <a href="">Contact</a>
+                </li>
+                <li className="navbar">
+                  <a href="">
+                    <FaHeart />
+                  </a>
+                </li>
+                <li className="navbar">
+                  <a href="">
+                    <MdOutlineShoppingCart />
+                  </a>
                 </li>
               </ul>
             </nav>
