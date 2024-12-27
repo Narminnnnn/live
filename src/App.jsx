@@ -4,6 +4,7 @@ import Header from './assets/Components/Header/Header'
 import Sectionone from './assets/Components/Main/Sectionone/Sectionone'
 import Sectiontwo from './assets/Components/Main/Sectiontwo/Sectiontwo'
 import Sectionthree from './assets/Components/Main/Sectionthree/Sectionthree'
+import Sectionfour from './assets/Components/Main/Sectionfour/Sectionfour'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Header />
       <Sectionone />
       <Sectiontwo />
-      <Sectionthree/>
+      <Sectionthree />
+      <Sectionfour/>
     </div>
   )
 }

@@ -2,7 +2,30 @@ import React from "react";
 import "./Sectionthree.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { useEffect, useState } from "react";
+import { FaRegHeart } from "react-icons/fa";
+import axios from "axios";
+
 const Sectionthree = () => {
+ 
+ const [datas, setdatas] = useState([]);
+
+ const visibility = async () => {
+   let res = await axios.get("https://fakestoreapi.com/products");
+   setdatas(res.data);
+   console.log(res.data);
+ };
+
+ useEffect(() => {
+   visibility();
+ }, []);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   return (
     <section className="secThree">
       <div className="container-three">
@@ -30,6 +53,25 @@ const Sectionthree = () => {
               </span>
             </button>
           </div>
+        </div>
+
+        <div className="axios-boxs">
+          {datas.map((item) => (
+            <div className="axios-box" key={item.id}>
+              <div className="img-box">
+                <img src={item.image} alt={item.title} />
+              </div>
+              <div className="text-box">
+                <p>{item.title}</p>
+                <div className="icon-add"></div>
+                <div className="icone-box">
+                  <FaRegHeart />
+                </div>
+                <button className="add">Add to basket</button>
+                <button className="add">detalis</button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
