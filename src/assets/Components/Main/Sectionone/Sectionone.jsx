@@ -16,9 +16,9 @@ const Sectionone = () => {
                       <a href="">Home</a>, <a href="">About</a> and <a href="">FAQ</a>
                   </p>
 
-                  <button className='discover style'>Discover More</button>
+                  <button className='discover styles'>Discover More</button>
                   <span className='or'>or</span>
-                  <button className='check style'><a href="">Check our FAQs</a></button>
+                  <button className='check styles'><a href="">Check our FAQs</a></button>
                 </div>
           </div>
           </div>  

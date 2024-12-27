@@ -17,6 +17,7 @@
     width: 194px;
     height: 655px;
     z-index: -1;
+  
   }
   &::after {
     content: url("https://templatemo.com/templates/templatemo_582_tale_seo_agency/assets/images/banner-right.png");
@@ -34,7 +35,7 @@
   justify-content: start;
 }
 .text {
-  width: 42%;
+  width: 60%;
   .seo {
     margin-bottom: 30px;
     a {
@@ -61,13 +62,14 @@
     }
   }
   .tale {
-    padding-right: 25%;
+    width: 80%;
+    padding-right: 30px;
     margin-bottom: 30px;
     font-size: 15px;
     line-height: 30px;
     color: #afafaf;
   }
-  .style {
+  .styles {
     font-size: 14px;
     color: #fff;
     padding: 12px 30px;
